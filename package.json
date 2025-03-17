@@ -1,0 +1,16 @@
+{
+  "name": "remotar-discord-bot",
+  "version": "1.0.0",
+  "main": "app.js",
+  "repository": "https://github.com/levicarlosz/jobot.git",
+  "author": "Levi Carlos <olevicarlos.dev@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.18.0",
+    "dotenv": "^16.4.7",
+    "puppeteer": "^24.4.0"
+  }
+}
