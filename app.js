@@ -1,5 +1,6 @@
 require("dotenv").config();
 
+
 const { Client, GatewayIntentBits } = require("discord.js");
 const puppeteer = require("puppeteer");
 
@@ -11,6 +12,11 @@ const DISCORD_TOKEN = process.env.DISCORD_API_KEY;
 const CHANNEL_ID = process.env.DISCORD_CHANNEL_ID;
 const REMOTAR_URL = process.env.REMOTAR_URL;
 const DATE = process.env.DATE;
+
+
+const timeElapsed = Date.now()
+const date = new Date(timeElapsed);
+const options = { year: 'numeric', month: 'long', day: 'numeric' };
 
 client.once("ready", () => {
   console.log(`Bot ${client.user.tag} está online!`);
@@ -76,20 +82,21 @@ async function fetchJobs() {
       if (todayJobs.length > 0) {
         todayJobs.forEach((job, index) => {
           const message = `
-                            ----------------------------------------    
-                            **Título:** ${job.title}
-                            **Empresa:** ${job.company}
-                            **Localização:** ${job.location}
-                            **Tipo de Trabalho:** ${job.tags}
-                            **Link:** ${job.link}
-                            ----------------------------------------
+----------------------------------------
+**Data:** ${date.toLocaleDateString('pt-BR', options)}    
+**Título:** ${job.title}
+**Empresa:** ${job.company}
+**Localização:** ${job.location}
+**Tipo de Trabalho:** ${job.tags}
+**Link:** ${job.link}
+----------------------------------------
                     `;
           channel.send(message);
         });
-        console.log(`Encontradas ${todayJobs.length} vagas para hoje.`);
+        console.log(`Encontradas ${todayJobs.length} vagas para ${DATE}.`);
       } else {
-        channel.send("Nenhuma vaga nova encontrada hoje.");
-        console.log("Nenhuma vaga nova encontrada hoje.");
+        channel.send(`Nenhuma vaga nova encontrada ${DATE}.`);
+        console.log(`Nenhuma vaga nova encontrada ${DATE}.`);
       }
     }
   } catch (error) {

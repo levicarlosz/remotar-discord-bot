@@ -6,6 +6,10 @@ Um bot de Discord que busca e compartilha automaticamente vagas de trabalho remo
 
 Este bot foi desenvolvido para auxiliar os membros de um servidor Discord universitário a encontrar oportunidades de trabalho remoto. Ele faz scraping do site Remotar.com.br em intervalos regulares (a cada hora) e envia as novas vagas do dia para um canal específico no Discord.
 
+## 📷 Como Vai Ficar no Seu Servidor
+![image](https://github.com/user-attachments/assets/df1c3eae-a31d-4f27-b060-4277132479bc)
+
+
 ## 🔧 Tecnologias Utilizadas
 
 - [Node.js](https://nodejs.org/)
