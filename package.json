@@ -6,7 +6,7 @@
   "author": "Levi Carlos <olevicarlos.dev@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node app.js"
+    "start": "node src/bot/index.js"
   },
   "dependencies": {
     "discord.js": "^14.18.0",
