@@ -9,7 +9,7 @@ Este bot foi desenvolvido para ajudar membros de comunidades (como servidores un
 
 ## 📷 Como Vai Ficar no Seu Servidor
 
-![image](https://github.com/user-attachments/assets/df1c3eae-a31d-4f27-b060-4277132479bc)
+![image](https://github.com/user-attachments/assets/1351deec-9c98-4e9c-aeb2-99331c307154)
 
 ## 🔧 Tecnologias Utilizadas
 
