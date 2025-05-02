@@ -1,13 +1,12 @@
 module.exports = function formatJobMessage(job, date) {
-    const options = { year: 'numeric', month: 'long', day: 'numeric' };
-    return `
+  const options = { year: "numeric", month: "long", day: "numeric" };
+  return `
   ----------------------------------------
-  **Data:** ${date.toLocaleDateString('pt-BR', options)}    
+  **Data:** ${date.toLocaleDateString("pt-BR", options)}    
   **Título:** ${job.title}
   **Empresa:** ${job.company}
-  **Localização:** ${job.location}
+  **Plataforma:** ${job.location}
   **Tipo de Trabalho:** ${job.tags}
   **Link:** ${job.link}
   ----------------------------------------`;
-  };
-  
+};
